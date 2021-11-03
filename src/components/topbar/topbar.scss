@@ -1,0 +1,64 @@
+.topbar{
+    height: 55px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    .topbarWrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .topLeft{
+            margin-left: 1rem;
+            .logo{
+                display: flex;
+                align-items: center;
+                font-size: 30px;
+                font-weight: 600;
+                color: #0ff;
+                cursor: pointer;
+                .logoIcon{
+                    font-size: 30px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .topRight {
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+            .iconWrapper {
+                position: relative;
+                margin-right: 1.2rem;
+                color: white;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: #0ff
+                }
+                .iconBadge {
+                    height: .9rem;
+                    width: .9rem;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -4px;
+                    right: -2px;
+                }
+            }
+            .topAvtar{
+                height: 34px;
+                width: 34px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+    }
+}
