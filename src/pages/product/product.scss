@@ -1,0 +1,136 @@
+.product{
+    flex: 4.2;
+    padding: 20px;
+    .productWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .productTitle{
+            color: #ecbeec;
+        }
+        .productAddButton{
+            width: 80px;
+            height: 30px;
+            border: 1px solid #987998;
+            border-radius: 5px;
+            background-color: #111;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover{
+                background-color: #987998;
+            }
+        }
+    }
+    .productTop{
+        display: flex;
+        align-items: center;
+        .productLeft{
+            flex: 1.5;
+            height: 100%;
+        }
+        .productRight{
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+            -webkit-box-shadow: 0px 0px 15px -8px rgba(209, 208, 208, 0.75);
+            box-shadow: 0px 0px 15px -8px rgba(190, 190, 190, 0.75);
+            .productInfoTop{
+                display: flex;
+                align-items: center;
+                .productName{
+                    font-weight: 600;
+                }
+                .productImg{
+                    margin-left: 20px;
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .productInfoBottom{
+                margin-top: 10px;
+                .productInfo{
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .productBottom{
+        padding: 20px;
+        margin: 20px;
+        -webkit-box-shadow: 0px 0px 15px -8px rgba(209, 208, 208, 0.75);
+        box-shadow: 0px 0px 15px -8px rgba(190, 190, 190, 0.75);
+        .productForm{
+            display: flex;
+            justify-content: space-between;
+            .productFormLeft{
+                display: flex;
+                flex-direction: column;
+                &>label{
+                    margin-bottom: 10px;
+                }
+                &>input{
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #111;
+                    color: #fff;
+                    border-bottom: 1px solid #0ff;
+                    &:focus{
+                        outline: none;
+                        color: #ecbeec;
+                        border-bottom: 1px solid #ecbeec;
+                    }
+                }
+                &>select{
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    background-color: #111;
+                    border-bottom: 1px solid #0ff;
+                    &:focus{
+                        outline: none;
+                        color: #ecbeec;
+                        border-bottom: 1px solid #ecbeec;
+                    }
+                }
+            }
+            .productFormRight{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .productUpload{
+                    display: flex;
+                    align-items: center;
+                    .uploadImg{
+                        width: 200px;
+                        height: 120px;
+                        border-radius: 8px;
+                        object-fit: cover;
+                    }
+                }
+                .productButton{
+                    margin-top: 30px;
+                    margin-left: 100px;
+                    border: none;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 5px;
+                    background-color: rgb(22, 175, 175);
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 600;
+                    &:hover{
+                        background-color: #0ff;
+                    }
+                }
+            }
+        }
+    }
+}
